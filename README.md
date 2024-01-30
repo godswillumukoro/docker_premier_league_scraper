@@ -8,5 +8,5 @@ docker build -t premier-league-scraper-docker .
 
 # Run Script
 ```
-docker run premier-league-scraper-docker
+docker run -it premier-league-scraper-docker
 ```

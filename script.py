@@ -25,7 +25,7 @@ ASCII_ART = r"""
 ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚══════╝╚═╝░░╚═╝
 
 """
-    
+
 title = ASCII_ART
 
 commands = f"""
@@ -120,7 +120,9 @@ except:
 
 def runScript():
     while True:
-        userPrompt = input("Enter a command: ").lower().strip()
+        userPrompt = input("Enter a command: ")
+        userPrompt = userPrompt.lower().strip()
+
         if userPrompt == "latest":
             print(Fore.GREEN + 'LATEST NEWS')
             print(merged_data)
